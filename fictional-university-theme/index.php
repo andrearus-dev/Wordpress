@@ -1,12 +1,14 @@
 <?php 
-  function greet($name, $colour) {
-    echo "<p>Hi, my name is $name and my favourite colour is $colour </p>";
-  }
 
-  greet('John', 'blue');
-  greet('Jane', 'black');
+  while(have_posts()) {  // while we still have posts function
+    the_post();   // keeps track of posts - like the count function 
+    ?> // drop out of php 
 
-  while(have_posts()) { 
+    <h2><?php the_title(); ?></h2>
+
+  <?php } 
+
+
 
   }
 ?>
