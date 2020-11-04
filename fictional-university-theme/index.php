@@ -1,10 +1,10 @@
 <?php 
-  // function greet($name, $colour) {
-  //   echo "<p>Hi, my name is $name and my favourite colour is $colour </p>";
-  // }
+  function greet($name, $colour) {
+    echo "<p>Hi, my name is $name and my favourite colour is $colour </p>";
+  }
 
-  // greet('John', 'blue');
-  // greet('Jane', 'black');
+  greet('John', 'blue');
+  greet('Jane', 'black');
 
   while(have_posts()) { 
 
