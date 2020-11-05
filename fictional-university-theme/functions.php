@@ -2,9 +2,12 @@
 
 function university_files() {
 
+  wp_enqueue_script('main-university-js', get_theme_file_uri('/js/scripts-bundled.js/'), NULL, '1.0', true);
   wp_enqueue_style('custom-google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i');
   wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   wp_enqueue_style('university_main_styles', get_stylesheet_uri());
 } //called wordpress function (wp_enqueue_style) and pointed towards css file we wanted to load 
 
 add_action('wp_enqueue_scripts', 'university_files');
+
+// when linking the files with wp_enqueue - first parameter is us naming the file (which doesn't really matter), second parameter is actually pointing to the file that we want to load 
