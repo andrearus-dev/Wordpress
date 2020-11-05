@@ -6,6 +6,5 @@
 
 <body>
 <h1>Functional University</h1>
-</body>
-</html>
+
 

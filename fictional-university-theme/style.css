@@ -1,3 +1,7 @@
 /* Theme name: Fictional University
 Author: Andrea
 Version: 1.0 */
+
+body {
+  color: green;
+}
