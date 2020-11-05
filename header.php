@@ -1,1 +1,1 @@
-<h1>Hello</h1>
+<h1>Title of page</h1>
